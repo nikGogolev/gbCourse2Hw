@@ -21,13 +21,6 @@ body{
 	margin: 0 auto;
 }
 
-.p-text{
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 17px;
-	color: #5D5D5D;
-}
-
 .header{
   background: #222222;
 }
@@ -126,6 +119,67 @@ body{
 	font-size: 32px;
 	line-height: 38px;
 	color: #f16d7f;
+}
+
+.navigationmenu{
+    position: relative;
+    background: #ffffff;
+    width: 232px;
+    height: 764px;
+    padding-top: 37px;
+    padding-left: 34px;
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+.menu__heading{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.menu__firstlevel{
+    list-style: none;
+}
+
+.menu_firstlevel-link{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+}
+
+.menu__secondlevel{
+    list-style: none;
+}
+
+.menu__secondlevel-link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-bottom: 11px;
+    margin-left: 22px;
+}
+
+.navigationmenu-close{
+    position: absolute;
+    border: none;
+    background: #ffffff;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
 }
 
 .categories{
@@ -245,10 +299,41 @@ body{
 	margin-bottom: 0px;
 }
 
+.featuredItem-image-wrapper{
+    position: relative;
+    margin-bottom: 25px;
+}
+
 .featuredItem-image{
 	max-width: 100%;
 	height: auto;
-	margin-bottom: 25px;
+}
+
+.featuredItem-image-smooth{
+    position: absolute;
+    display: none;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+}
+
+.addtocart-button{
+    display: none;
+    margin: auto;
+    width: 139px;
+    height: 44px;
+    background: url(img/add-to-cart.png) no-repeat 50% 50%;
+}
+
+.featuredItem-image-wrapper:hover .featuredItem-image-smooth{
+    display: flex;
+}
+
+.featuredItem-image-wrapper:hover .addtocart-button{
+    display: block
 }
 
 .featuredItem-heading{
@@ -286,6 +371,11 @@ body{
 	color: #F26376;
 	border: 1px solid #F26376;
 	text-decoration: none;
+}
+
+.featuredItems-moreButton:hover{
+    background-color: #F26376;
+    color: #ffffff;
 }
 
 .footer__top{
@@ -447,7 +537,11 @@ body{
 	color: #FBFBFB;
 }
 
-.social{
+.social-btn{
 	font-size: 32px;
 	color: #FFFFFF;
+}
+
+.social-btn:hover{
+    color: #F16D7F;
 }
