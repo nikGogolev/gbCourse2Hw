@@ -653,15 +653,15 @@ body {
 }
 
 .categories-people-women {
-	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('img/index/for-women.png');
+	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('../img/index/for-women.png');
 }
 
 .categories-people-men {
-	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('img/index/for-men.png');
+	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('../img/index/for-men.png');
 }
 
 .categories-people-kids {
-	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('img/index/for-kids.png');
+	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('../img/index/for-kids.png');
 }
 
 .categories-accesories {
@@ -670,7 +670,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	min-height: 180px;
-	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('img/index/accesories.png');
+	background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url('../img/index/accesories.png');
 }
 
 .categories-accesories-item-text {
@@ -929,7 +929,7 @@ body {
 .footer-top {
 	padding-top: 97px;
 	padding-bottom: 153px;
-	background: url('img/footer-middle-bg.png') no-repeat;
+	background: url('../img/footer-middle-bg.png') no-repeat;
 }
 
 .footer-top-wrapper {
