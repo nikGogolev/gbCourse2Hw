@@ -96,7 +96,7 @@ body{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		min-height: 75px;
+		height: 75px;
 	}
 }
 
@@ -520,7 +520,6 @@ body{
 	padding: 96px 0;
 	
 	&-wrapper{
-		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
@@ -644,7 +643,9 @@ body{
 
 
 .featured-items-more-button{
-	display: inline-block;
+	display: block;
+	max-width: 215px;
+	margin: 0 auto;
 	padding: 14px 38px;
 	.text(@font-size: 16px;@line-height: 19px;@color: (@brand-color + #010000 - #000A09));
 	border: 1px solid (@brand-color + #010000 - #000A09);
@@ -689,12 +690,14 @@ body{
 		&-heading{
 			margin-bottom: 16px;
 			.text(@font-size: 20px;@line-height: 24px;@color: #FBFBFB);
+			max-width: 100%;
 		}
 		
 		&-text{
 			.text(@font-weight: 300;@color: #FBFBFB);
 			text-align: center;
 			opacity: .6;
+			max-width: 100%;
 		}
 	}
 }

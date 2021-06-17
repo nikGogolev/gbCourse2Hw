@@ -1,8 +1,8 @@
-let sheetTitle = document.querySelector('title').textContent;
+var sheetTitle = document.querySelector('title').textContent;
 
-let navigationMenu = document.querySelector('.navmenu');
-let navigationMenuOpen = document.querySelector('.navmenu-open');
-let navigationMenuClose = document.querySelector('.navmenu-close');
+var navigationMenu = document.querySelector('.navmenu');
+var navigationMenuOpen = document.querySelector('.navmenu-open');
+var navigationMenuClose = document.querySelector('.navmenu-close');
 navigationMenuOpen.onclick = function () {
 	if (navigationMenuOpen.checked){
 		navigationMenu.style.height = '764px';
@@ -15,15 +15,15 @@ navigationMenuOpen.onclick = function () {
     }
 }
 
-let numberOfItemsInCart = document.querySelector('.menu-list-item-cart-icon-text');
+var numberOfItemsInCart = document.querySelector('.menu-list-item-cart-icon-text');
 numberOfItemsInCart.textContent = 3;
 
 
 if (sheetTitle === 'Catalog'){ // Работает на странице каталога
 	
-	let catalogCategoryTrendingNowCheckbox = document.querySelector('#catalog-category-trending-now-btn');
-	let catalogCategorySizeCheckbox = document.querySelector('#catalog-category-size-btn');
-	let catalogCategoryPriceCheckbox = document.querySelector('#catalog-category-price-btn');
+	var catalogCategoryTrendingNowCheckbox = document.querySelector('#catalog-category-trending-now-btn');
+	var catalogCategorySizeCheckbox = document.querySelector('#catalog-category-size-btn');
+	var catalogCategoryPriceCheckbox = document.querySelector('#catalog-category-price-btn');
 	
 	catalogCategoryTrendingNowCheckbox.onclick = function () {
 		if (catalogCategoryTrendingNowCheckbox.checked) {
@@ -48,9 +48,9 @@ if (sheetTitle === 'Catalog'){ // Работает на странице кат�
 }
 
 if (sheetTitle === 'Product'){ // Работает на странице товара
-	let chooseColorCheckbox = document.querySelector('#choose-color-btn');
-	let chooseSizeCheckbox = document.querySelector('#choose-size-btn');
-	let chooseQuantityCheckbox = document.querySelector('#choose-quantity-btn');
+	var chooseColorCheckbox = document.querySelector('#choose-color-btn');
+	var chooseSizeCheckbox = document.querySelector('#choose-size-btn');
+	var chooseQuantityCheckbox = document.querySelector('#choose-quantity-btn');
 
 
 
