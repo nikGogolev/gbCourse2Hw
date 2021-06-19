@@ -1908,7 +1908,7 @@ body{
 	}
 }
 
-/*----------------------------- Product.html---------------------------------*/
+/*----------------------------- Registration.html---------------------------------*/
 
 .registration{
 	&-wrapper{
@@ -2062,6 +2062,7 @@ body{
 			&-item{
 				.text(@font-size: 24px;@line-height: 29px;@font-weight: 300);
 				margin-bottom: 16px;
+				display: inline-flex;
 				
 				&:before{
 					display: inline-flex;
@@ -2074,12 +2075,12 @@ body{
 					transform-origin: left bottom;
 					transform: rotate(-45deg);
 					margin-left: 10px;
+					align-self: center;
 				}
 			}
 		}
 	}
 }
-
 
 @media (max-width: 1080px) {
 	.featured-items-box-item {
@@ -2244,6 +2245,30 @@ body{
 	.cart-order{
 		flex-direction: row;
 	}
+
+	.registration-wrapper{
+		padding: 40px 16px 96px;
+	}
+
+	.registration-perks{
+		max-width: 354px;
+	}
+
+	.registration-perks-heading{
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.registration-perks-description{
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.registration-perks-list-item{
+		font-size: 16px;
+		line-height: 19px;
+	}
+
 }
 
 @media (max-width: 751px) {
@@ -2277,8 +2302,6 @@ body{
 	.mini-catalog .featured-items-box-item:nth-child(3){
 		order: 2;
 	}
-	
-
 }
 
 @media (max-width: 375px) {
@@ -2489,5 +2512,14 @@ body{
 	
 	.mini-catalog-wrapper{
 		padding: 64px 0;
+	}
+
+	.registration-wrapper{
+		padding: 40px 8px 96px;
+		flex-direction: column;
+	}
+
+	.registration-form{
+		margin-bottom: 40px;
 	}
 }
