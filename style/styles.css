@@ -1635,7 +1635,7 @@ body {
 .mini-catalog-wrapper {
   padding: 128px 0 80px 0;
 }
-/*----------------------------- Product.html---------------------------------*/
+/*----------------------------- Cart.html---------------------------------*/
 .cart-wrapper {
   display: flex;
   justify-content: space-between;
@@ -2239,7 +2239,7 @@ body {
     margin-bottom: 0;
   }
   .cart-wrapper {
-    padding: 59px 16px 147px;
+    padding: 59px 16px 128px;
     flex-direction: column;
   }
   .cart-box {
@@ -2251,6 +2251,18 @@ body {
   }
   .cart-order {
     flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+  }
+  .cart-order-form {
+    margin-right: 16px;
+    flex-grow: 1;
+    max-width: 360px;
+    width: 100%;
+  }
+  .cart-order-checkout {
+    margin-top: 40px;
   }
   .registration-wrapper {
     padding: 40px 16px 96px;
@@ -2460,6 +2472,65 @@ body {
   }
   .mini-catalog-wrapper {
     padding: 64px 0;
+  }
+  .cart-wrapper {
+    padding: 40px 8px 96px;
+  }
+  .cart-order {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cart-box {
+    margin-bottom: 48px;
+  }
+  .cart-box-item-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .cart-box-item-description {
+    padding: 17px;
+  }
+  .cart-box-item-description-heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart-box-item-description-price {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart-box-item-description-color {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart-box-item-description-size {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart-box-item-description-quantity {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart-box-item-description-quantity-value {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart-box-item-delete {
+    transform: scale(0.56);
+    top: 17px;
+    right: 12px;
+  }
+  .cart-box-buttons-item {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    padding: 9px 17px;
+  }
+  .cart-order-quote {
+    margin-bottom: 48px;
+  }
+  .cart-order-checkout {
+    margin-top: 0;
   }
   .registration-wrapper {
     padding: 40px 8px 96px;
