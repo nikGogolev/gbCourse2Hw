@@ -2311,6 +2311,8 @@ body {
 		
 		&-list{
 			list-style: none;
+			display: flex;
+			flex-direction: column;
 			
 			&-item{
 				.text(@font-size: 24px;@line-height: 29px;@font-weight: 300);
@@ -2342,7 +2344,7 @@ body {
 .registration-wrapper {
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-column-gap: 128px;
+	grid-column-gap: 22px;
 	align-items: start;
 }
 
@@ -2526,6 +2528,7 @@ body {
 
 .registration-perks {
 	max-width: 660px;
+	justify-self: end;
 }
 
 .registration-perks-heading {
@@ -2563,11 +2566,12 @@ body {
 	text-transform: none;
 	text-decoration: none;
 	margin-bottom: 16px;
-	display: inline-flex;
+	display: grid;
+	grid-template-columns: 52px auto;
 }
 
 .registration-perks-list-item:before {
-	display: inline-flex;
+	display: block;
 	content: '';
 	width: 20px;
 	height: 10px;
@@ -2759,10 +2763,6 @@ body {
 
 	.registration {
 		padding: 40px 16px 96px;
-	}
-
-	.registration-wrapper {
-		grid-column-gap: 22px;
 	}
 
 	.registration-perks {
