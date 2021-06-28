@@ -221,6 +221,7 @@ body {
 	border: none;
 	background: transparent;
 	cursor: pointer;
+	transition: visibility 0s .4s;
 }
 
 .menu-list-item-account-icon {
@@ -240,6 +241,7 @@ body {
 	border: none;
 	background: transparent;
 	cursor: pointer;
+	transition: visibility 0s .4s;
 }
 
 .menu-list-item-cart-icon {
