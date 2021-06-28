@@ -752,7 +752,7 @@ body{
 				position: relative;
 				
 				&-email{
-					padding: 16px 0 16px 22px;
+					padding: 16px 10px 16px 22px;
 					max-width: 256px;
 					.text(@color: #222224);
 					opacity: .67;
@@ -763,12 +763,12 @@ body{
 					
 					&:focus{
 						border: 1px solid #000;
-						padding: 15px 0 15px 20px;
+						padding: 15px 9px 15px 21px;
 					}
 					
 					&:focus:invalid{
 						border: 1px solid #f00;
-						padding: 15px 0 15px 20px;
+						padding: 15px 9px 15px 21px;
 					}
 				}
 				
@@ -1283,17 +1283,9 @@ body{
 					color: (@brand-color - #10120F + #0E0000);
 				}
 				
-				&:nth-last-child(2){
-					position: relative;
-					
-					&::before{
-						content:'.....';
-						color: #C4C4C4;
-						position: absolute;
-						left: -20px;
-						line-height: 17px;
-					}
-
+				&:nth-last-child(3){
+					margin-left: -20px;
+					margin-right: -20px;
 				}
 			}
 		}
