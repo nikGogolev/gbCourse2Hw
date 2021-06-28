@@ -29,6 +29,13 @@ navigationMenuOpen.onclick = function () {
     }
 }
 
+window.onresize = function(){
+	if (window.screen.width >= 375){
+		menuListItemAccount.style.visibility = 'visible';
+		menuListItemCart.style.visibility = 'visible';
+	}
+}
+
 var numberOfItemsInCart = document.querySelector('.menu-list-item-cart-icon-text');
 numberOfItemsInCart.textContent = 3;
 
