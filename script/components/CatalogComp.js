@@ -24,11 +24,12 @@ Vue.component('catalog', {
 		.then(data => {
 			this.allProducts = data;
 			this.chooseNRandomGoods(this.productsnumber);
+			this.$root.$refs.search.filter();
 		});
 	},
 	template:`
 		<div class="featured-items-box">
-			<product v-for="item of products" :key="item.product_id" :img="imgCatalog" :product="item"></product>
+			<product v-for="item of $root.$refs.search.filtered" :key="item.product_id" :img="imgCatalog" :product="item"></product>
 		</div>`
 });
 

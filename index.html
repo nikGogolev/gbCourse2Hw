@@ -62,14 +62,7 @@
 					<a href="index.html"><img src="img/logo.png" alt="logo image"></a>
 				</li>
                 <li class="logo-list-item">
-                    <form class="logo-list-item-search">
-                        <label for="logo-search" class="logo-list-item-search-label">
-                            <svg class="logo-list-item-search-label-icon" width="27" height="28">
-                                <use xlink:href="#search-icon"></use>
-                            </svg>
-                        </label>
-                        <input type="search" id="logo-search" class="logo-list-item-search-input">
-                    </form>
+                    <search ref="search"></search>
                 </li>
             </ul>
 			<div class="header-balls">
@@ -346,6 +339,7 @@
     </footer>
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="script/components/SearchComp.js"></script>
 	<script src="script/components/CartComp.js"></script>
 	<script src="script/components/CatalogComp.js"></script>
     <script src="script/main.js"></script>
