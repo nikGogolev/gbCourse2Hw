@@ -114,7 +114,7 @@
                     </a>
                 </li>
                 <li class="menu-list-item">
-                    <a href="cart.html"  @click.prevent="showHideCart" class="menu-list-item-cart">
+                    <a href="cart.html" @click.prevent="$root.$refs.cart.showHideCart" class="menu-list-item-cart">
                         <svg class="menu-list-item-cart-icon" width="43" height="39">
                             <use x="0" y="10" xlink:href="#cart-icon"></use>
                             <circle class="menu-list-item-cart-icon-contain" cx="33" cy="10" r="10"/>
@@ -124,23 +124,7 @@
                 </li>
             </ul>
         </div>
-		<div class="cart-block" v-bind:class="{invisible: isInsvisible}">
-			<div class="cart-item" v-for="item of cartItems" :key="item.product_id">
-				<div class="product-bio">
-					<img :src="imgCatalog+item.image_src" alt="Some image">
-					<div class="product-desc">
-						<p class="product-title">{{item.product_name}}</p>
-						<p class="product-quantity">Количество: {{item.quantity}}</p>
-						<p class="product-single-price">{{item.product_price}} за ед.</p>
-					</div>
-				</div>
-				<div class="right-block">
-					<p class="product-price">{{item.quantity*item.product_price}} ₽</p>
-					<button class="del-btn" @click="removeProduct(item)" :data-id="item.id_product">&times;</button>
-				</div>
-			</div>
-			<div v-bind:class="{invisible: !isCartEmpty}">Корзина пуста</div>
-		</div>
+		<cart ref="cart"></cart>
         <nav class="navmenu">
             <h2 class="navmenu-heading">Menu</h2>
             <ul class="navmenu-list">
@@ -202,32 +186,7 @@
 
         <section class="container cart">
             <div class="container-mini cart-wrapper">
-                <div class="cart-box">
-                    <div class="cart-box-item" v-for="item of cartItems" :key="item.product_id">
-                        <div class="cart-box-item-img-wrapper">
-                            <img class="cart-box-item-img" :src="imgCatalog+item.image_src" alt="cart image 1">
-                        </div>
-                        <div class="cart-box-item-description">
-                            <h3 class="cart-box-item-description-heading">{{item.product_name}}</h3>
-                            <span class="cart-box-item-description-price">Price: <span
-                                    class="cart-box-item-description-price-value">${{item.product_price}}</span></span>
-                            <span class="cart-box-item-description-color">Color: <span
-                                    class="cart-box-item-description-color-value">Red</span></span>
-                            <span class="cart-box-item-description-size">Size: <span
-                                    class="cart-box-item-description-size-value">XL</span></span>
-                            <span class="cart-box-item-description-quantity">Quantity: {{item.quantity}}</span>
-                        </div>
-                        <button class="cart-box-item-delete" @click="removeProduct(item)">
-                            <svg class="cart-box-item-delete-icon" width="18" height="18">
-                                <use xlink:href="#close-icon"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="cart-box-buttons">
-                        <button class="cart-box-buttons-item">Clear shopping cart</button>
-                        <button class="cart-box-buttons-item">Continue shopping</button>
-                    </div>
-                </div>
+                <cart-page ref="cart-page"></cart-page>
                 <form class="cart-order">
                     <div class="cart-order-form">
                         <h3 class="cart-order-heading">Shipping address</h3>
@@ -338,8 +297,11 @@
     </footer>
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="script/components/CartPageComp.js"></script>
+	<script src="script/components/CartComp.js"></script>
+	<script src="script/components/CatalogComp.js"></script>
+	
     <script src="script/main.js"></script>
-	<script src="script/cart.js"></script>
 </body>
 
 </html>

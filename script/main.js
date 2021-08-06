@@ -41,3 +41,46 @@ let numberOfItemsInCart = document.querySelector('.menu-list-item-cart-icon-text
 numberOfItemsInCart.textContent = 3;
 }
 console.log('script is working');
+
+const API = 'https://raw.githubusercontent.com/nikson1701/onlineStoreAPI/main/responses/';
+
+const app = new Vue({
+	el: '#app',
+	data: {
+
+	},
+	methods: {
+		getJson(url){
+			return fetch(url)
+				.then(result => result.json())
+				.catch(error => {
+				console.log(error);
+			})
+		},
+		
+	},
+	beforeCreated() {
+	
+	},
+	created() {
+
+	},
+	beforeMount() {
+	
+	},
+	mounted() {
+		main();
+	},
+	beforeUpdate() {
+	
+	},
+	updated() {
+	
+	},
+	beforeDestroy() {
+	
+	},
+	destroyed() {
+	
+	},
+})
